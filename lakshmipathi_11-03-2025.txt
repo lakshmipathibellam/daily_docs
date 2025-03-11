@@ -1,0 +1,109 @@
+--> Today i prepared ppt about git :
+
+
+--> create some files and practice few git commands like
+
+1. git init 
+2. git add
+3. git remote add origin <url>
+4. git branch -M main
+5. git branch -b <branch name>
+6. git branch
+7. git merge 
+8. git log
+9. git status
+
+--> also practiced few sql queries :
+create database test2;
+use test2;
+#Create two tables: users and orders. 
+#Each user can have multiple orders. 
+#Write a SQL query to fetch the names of users along with the total number of orders they have placed.
+create table user (user_id int primary key,user_name varchar(30));
+create table orders(order_id int, item varchar(25),user_id int, foreign key (user_id) references user(user_id));
+insert into user (user_id,user_name) values(1,'Raju'),(2,'Bunny'),(3,'Mani'),(4,'Anu'),(5,'Vijju');
+insert into orders (order_id,item,user_id) values(101,'car',2),(102,'bike',1),(103,'laptop',4),(104,'bag',5),(105,'bat',2),(106,'slippers',5);
+select user.user_name,count(orders.item) from user inner join orders on user.user_id=orders.user_id group by user_name;
+
+#Task-2:
+#You are working with a database that stores information about students and their courses. There are three tables: students, courses, and enrollments. 
+#Write a SQL query to display the names of students along with the courses they have enrolled in.
+create table students (stu_id int primary key,stu_name varchar(25));
+create table courses (course_id int primary key,course_name varchar(30));
+create table enrollments (enr_id int , stu_id int,course_id int);
+insert into students (stu_id,stu_name) values (1,'shankar'),(2,'sai'),(3,'prasad'),(4,'srinu'),(5,'ashok');
+insert into courses (course_id ,course_name) values (1,'python'),(2,'sql'),(3,'devops'),(4,'react'),(5,'java'),(6,'testing');
+insert into enrollments (enr_id,stu_id,course_id) values (1,1,2),(2,2,3),(3,2,1),(4,5,6),(5,4,4);
+select students.stu_name, courses.course_name from students join enrollments on students.stu_id = enrollments.stu_id 
+join courses on enrollments.course_id = courses.course_id;
+
+#You need to retrieve data from a database that tracks product sales. There are tables for products, sales, and customers. 
+#Write a SQL query to show the total sales amount for each product category.
+create table products (product_id int primary key,product_name varchar(30) ,category varchar(25) ,price decimal(10,2) );
+create table customers (customer_id int primary key,customer_name varchar(25) );
+create table sales (sale_id int primary key,product_id int,customer_id int,quantity int ,sale_date date);
+insert into products (product_id, product_name, category, price) values(1, 'Laptop', 'Electronics', 50000.00),(2, 'Smartphone', 'Electronics', 30000.00),
+(3, 'Shoes', 'Fashion', 2000.00),(4, 'T-shirt', 'Fashion', 1000.00),(5, 'books', 'Statinory', 40000.00);
+insert into customers (customer_id, customer_name) values(1, 'Ravi Kumar'),(2, 'Suresh Reddy'),(3, 'Anil Babu'),(4, 'Praveen Chowdary');
+insert into sales (sale_id, product_id, customer_id, quantity, sale_date) values(1, 1, 1, 2, '2024-02-01'),(2, 2, 2, 1, '2024-02-02'),(3, 3, 3, 3, '2024-02-03'),
+(4, 4, 4, 5, '2024-02-04'),(5, 5, 1, 1, '2024-02-05');
+select products.category, SUM(products.price * sales.quantity) AS total_sales_amount from sales join products on sales.product_id = products.product_id
+group by products.category;
+
+#You have a database containing information about employees in a company. 
+#Write a SQL query to list the names of employees along with their respective managers' names.
+create table employees (employee_id int primary key,employee_name varchar(30),manager_id int,
+   foreign key (manager_id) references employees(employee_id) );
+insert into employees (employee_id, employee_name, manager_id) values(1, 'Ravi Kumar', 1),(2, 'Suresh Reddy', 1), (3, 'Anil Babu', 1),(4, 'Praveen Chowdary', 2),
+ (5, 'Venkat Rao', 2),(6, 'Ramesh Naidu', 3);
+select e.employee_name as Employee, m.employee_name as Manager from employees e left join employees m on e.manager_id = m.employee_id;
+
+#Task-5:
+#You are managing a database for an online store. 
+#Write a query to retrieve the top 10 bestselling products based on the total number of units sold.
+create table products1 (product_id int primary key,product_name varchar(30));
+create table sales1 (sale_id int primary key,product_id int,quantity int,sale_date date);
+insert into products1 (product_id, product_name) values (1, 'Laptop'),(2, 'Smartphone'),(3, 'Shoes'),(4, 'T-shirt'),(5, 'Refrigerator'),(6, 'Headphones'),
+(7, 'Washing Machine'),(8, 'Tablet'),(9, 'Smrtwatch'),(10, 'Microwave'),(11, 'Air Conditioner');
+insert into sales1 (sale_id, product_id, quantity, sale_date) values(1, 1, 20, '2024-02-01'),(2, 2, 35, '2024-02-02'),(3, 3, 50, '2024-02-03'),(4, 4, 75, '2024-02-04'),
+(5, 5, 10, '2024-02-05'),(6, 6, 90, '2024-02-06'),(7, 7, 5, '2024-02-07'),(8, 8, 40, '2024-02-08'),(9, 9, 60, '2024-02-09'),
+(10, 10, 30, '2024-02-10'),(11, 11, 55, '2024-02-11');
+select products1.product_name, SUM(sales1.quantity) as total_units_sold from sales1 join products1 ON sales1.product_id = products1.product_id
+group by product_name order by total_units_sold desc limit 10;
+
+#Task-6:
+#You have tables for students, courses, and grades. 
+#Write a SQL query to display the average grade for each student.
+create table student (student_id int primary key,student_name varchar(25));
+create table course (course_id int primary key,course_name varchar(25));
+create table grade (grade_id int primary key,student_id int,course_id int,grade float,foreign key (student_id) references student(student_id),
+foreign key (course_id) references course(course_id));
+insert into student (student_id, student_name) values(1, 'Shankar'),(2, 'Sai'),(4, 'Srinu'),(5, 'Ashok');
+insert into course (course_id, course_name) values(101, 'Python'),(102, 'SQL'),(103, 'DevOps'),(104, 'React'),(105, 'Java');
+insert into grade (grade_id, student_id, course_id, grade) values(1, 1, 101, 85.5),(2, 1, 102, 78.0),(3, 1, 103, 92.0),(4, 2, 101, 88.0),
+(5, 2, 102, 74.5);
+select student.student_name, AVG(grade.grade) AS average_grade FROM grade inner join student ON grade.student_id = student.student_id 
+group by student.student_id, student.student_name;
+#Task-11:
+#In a database storing movie information, 
+#Write a query to show the top 5 highest-rated movies by users.
+create table movies (movie_id int primary key,movie_name varchar(30),rating decimal(3,1));
+insert into movies (movie_id, movie_name, rating) values(1, 'pokiri', 8.0),(2, 'murari', 7.5),(3, 'sainikudu', 6.0),(4, 'dukudu', 8.5),(5, 'jalsa', 7.0),
+(6, 'devara', 9.0),(7, 'majili', 8.8),(8, 'pushpa', 8.2),(9, 'druva', 8.3),(10, 'bahubali', 9.5);
+select movie_name, rating from movies order by rating desc limit 5;
+
+#Task-12:
+#You have tables for invoices and payments. 
+#Write a query to show the unpaid invoices and their total amount.
+create table invoices (invoice_id int primary key,customer_id int,total_amount decimal(10,2),status varchar(20));
+create table payments (payment_id int primary key,invoice_id int,amount_paid decimal(10,2),foreign key (invoice_id) references invoices(invoice_id));
+insert into invoices (invoice_id, customer_id, total_amount, status) values(1, 101, 500.00, 'paid'),(2, 102, 750.00, 'unpaid'),(3, 103, 1200.00, 'paid'),(4, 104, 900.00, 'unpaid'),
+(5, 105, 650.00, 'unpaid');
+insert into payments (payment_id, invoice_id, amount_paid) values(1, 1, 500.00),(2, 3, 1200.00);
+select invoice_id, customer_id, total_amount from invoices where status = 'unpaid';
+
+
+
+
+
+
