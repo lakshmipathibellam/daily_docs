@@ -1,0 +1,40 @@
+DAY – 3
+ What are the cloud computing types?
+ Cloud computing is generally categorized into three main types based on service models and
+four main types based on deployment models.
+ There are two types of :
+1. Service model.
+2. Deployment Model.
+ Types Based on Service Models.
+1. Iaas: Infrastructure as a service
+2. Paas : Platform as a service
+3. Saas: Software as a service.
+ Mainly in a company’s it requerements
+Data,Networking,Storage,Servers,Virtualization,Operating system,Middleware,Runtime are
+very crucial
+ Iaas : Infrastructure as a software?
+ It providing the virtualized computing resources over the internet.
+ No worry about the underlying physical machines.
+ Iaas is leads to develop your applications. Cloud allow only virtualized infrastructure can rent
+and develop a new application.
+ In this model the vender will take care of networking, Storage, Servers, Virtualization.
+ Reaming servers like Data, Application, Middleware, Runtime and OS (Operating system) are
+will be taker of ourselves.
+ Paas : Platform as a software?
+ Platform as a service that have any control over the underlying architecture.
+ We can create our own applications and keep it on Google app engine
+ Paas is leads to develop your IT SYSTEM with help of cloud.
+ In paas cloud offers the rent the platform to developers or organizations.
+ In this model the vendor will take care Middleware, Networking, Storage, Servers,
+Virtualization, Runtime, Os
+ Reaming like Data, Application will be take care of ourselves.
+ Ex : Google search engine
+ Saas : software as a service?
+ Saas is a combination of Iaas + Paas.
+ It provides a full application stack as a server that customer can access it & also use it.
+ The application that are run in a cloud infrastructure is known as ‘’Saas”.
+ In this model all the services like Data, application, Middleware, Runtime, Storage, Servers,
+virtualization will be take care of vender.
+ Ex: Food delivery app
+
+

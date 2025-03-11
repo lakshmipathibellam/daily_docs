@@ -1,0 +1,86 @@
+What is git :
+Git is a distributed version control system (DVCS) used to track changes in source code during software development. It allows multiple developers to collaborate, manage code versions, and maintain a history of changes. Git was created by Linus Torvalds in 2005
+
+Difference b/n vcs and collaboration :
+
+A Version Control System (vcs) is a tool that helps track changes in files, typically in software development. It allows multiple developers to collaborate, manage source code versions, and maintain a history of modifications.
+
+Collaboration in Git refers to multiple developers working together on the same project. Git makes collaboration easy by enabling teams to contribute code, track changes, and resolve conflicts efficiently.
+
+what difference b/n Git and GitHub and GitLab :
+
+Git is a distributed version control system (DVCS) used to track changes in source code during software development. It allows multiple developers to collaborate, manage code versions, and maintain a history of changes.
+
+GitHub is a web-based platform that uses Git for version control and is primarily used for hosting and managing software projects. 
+
+GitLab is another web-based platform for hosting Git repositories, similar to GitHub, but it offers additional features for DevOps and CI/CD (Continuous Integration/Continuous Deployment). 
+
+In summary:
+--> Git is the version control system.
+--> GitHub is a platform that uses Git for version control and adds collaboration features.
+--> GitLab is a similar platform to GitHub but with a stronger focus on CI/CD and DevOps tools.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+create database lucky;
+use lucky;
+create table temples(S_No int,name varchar(20),place varchar(20),famous_god varchar(20));
+create table visiters(visitor_name varchar(25),visit_date date,s_no int);
+alter table temples add primary key (S_no);
+alter table visiters add constraint fk_S_no foreign key (S_No) references temples(S_No);
+insert into temples (S_No, name, place, famous_god) values 
+(1, 'Durgamma Temple', 'BZA', 'Durgamma'),
+(2, 'Tirupati', 'TPTY', 'Venkateswara'),
+(3, 'Kanipakam', 'Chittoor', 'Vinayaka'),
+(4, 'Srisailam', 'Kurnool', 'Mallikarjuna'),
+(5, 'Yadadri', 'Yadadri', 'Lakshmi Narasimha'),
+(6, 'Simhachalam', 'Visakhapatnam', 'Varaha Lakshmi Narasimha'),
+(7, 'Bhadrakali Temple', 'Warangal', 'Bhadrakali'),
+(8, 'Basara Saraswathi Temple', 'Basara', 'Saraswathi'),
+(9, 'Raghavendra Swamy Temple', 'Mantralayam', 'Raghavendra Swamy'),
+(10, 'Mahanandi Temple', 'Kurnool', 'Mahanandiswara');
+insert into visiters (visitor_name, visit_date, s_no) values
+('raju', '1998-01-01', 3),
+('srinu', '1998-06-10', 2),
+('prasad', '1999-02-15', 4),
+('sai', '1999-08-20', 10),
+('venu', '2000-03-25', 5),
+('babu', '2000-07-18', 2),
+('ramesh', '2021-04-10', 3),
+('suresh', '2001-09-12', 4),
+('mahesh', '2002-05-22', 1),
+('ganesh', '2022-11-30', 9),
+('kiran', '2003-06-08', 3),
+('ravi', '2003-12-15', 2),
+('shankar', '2024-07-19', 8),
+('naresh', '2004-10-25', 1),
+('rajesh', '2005-01-05', 5),
+('surya', '2005-08-11', 7),
+('karun', '2006-02-20', 2),
+('manoj', '2006-09-28', 4),
+('lokesh', '2007-03-14', 1),
+('vamsi', '2007-12-31', 10);
+alter table temples change column palce place varchar(40);
+alter table temples change column name name varchar(40);
+alter table temples change column famous_god famous_god varchar(40);
+drop table temples;
+show tables;
+select * from temples;
+select name from temples;
+select name from temples where name like 'b%';
+select name from temples where name like 'b%e';
+select name from temples where name like '%e';
+select name from temples where name like '%dr%';
+select name from temples where name like '%e%';
+select name from temples where name like 'b_%';
+select * from temples where name not like 'a%';
+select * from visiters where visit_date between '1990-01-01' and '2000-12-31';
+select temples.name ,visiters.visitor_name  from temples inner join visiters on temples.s_no=visiters.S_no where name ='durgamma temple';
+select temples.name ,visiters.visitor_name  from temples left join visiters on temples.s_no=visiters.S_no ;
+select temples.name ,visiters.visitor_name  from temples right join visiters on temples.s_no=visiters.S_no ;
+select temples.name ,visiters.visitor_name  from temples cross join visiters;
+select temples.name,count(visiters.visitor_name) as total_count from temples inner join visiters on 
+temples.s_no=visiters.S_no where name ='durgamma temple' ;
+select visitor_name,visit_date from visiters where day(visit_date)>20  order by visitor_name desc;
+
+
+

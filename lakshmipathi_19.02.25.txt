@@ -1,0 +1,58 @@
+file handling : It allows you to read, write, and manipulate files (such as text files, CSVs, JSON, etc.).
+open ():
+--> this is the function which is used to open the file.
+syntax:
+open(filename, mode)
+mode : 4 types 
+1. r-read : This is reading the content of the file: 
+   f = open("example.txt", "r")
+   res = f.read()
+   print(res)
+   f.close()
+
+2. a-append : Opens a file for appending, creates the file if it does not exist.
+EX : f = open("example.txt", "a")
+     f.write("\nThis is an additional line.")
+     f.close()
+
+3. w-write  : Opens a file for writing, creates the file if it does not exist
+EX : f = open("example.txt", "w")
+     f.write("Hello, this is a test file.")
+     f.close()
+
+4. x-create :  Creates the specified file, returns an error if the file exists
+EX : f = open("myfile.txt", "x")
+5. t-text   : Default value. Text mode
+6. b-binary : Binary mode 
+------------------------------------------------------------------
+MySQL: MySQL is an open-source Relational Database Management System (RDBMS) that allows users to store, retrieve, and manage structured data efficiently. It uses Structured Query Language (SQL) for database operations.
+
+SQL : SQL (Structured Query Language) is a programing language used to manage and manipulate relational databases.
+
+Database : it allows us to organize data in the form of tables also index.
+DBMS : Database management system. the draw back is relations are not possible to access the data. there are two types in DBMS.
+1. RDBMS : Relation database management system. we can store the data in the form of tables and can also map them on to different locations(tables).
+it will retrieve the data very fast.
+2.Non DBMS : we can store the data in key-value pairs(j-son format).
+-------------------------------------------------------------------------
+--> To create complete project we need 3 types of environments. 1.fronted 2. backend 3.databse 
+1. fronted :
+--> The UI (User Interface) that users interact with. done by fronted developers
+--> Built using technologies like HTML, CSS, JavaScript, React, Angular, or Vue.js.
+--> Fetches and displays data from the backend.
+
+2. backend :
+--> The logic and processing layer that connects frontend and database. done by backed developers
+--> Built using Python, Java, Node.js, .NET, PHP, etc.
+--> Handles authentication, business logic, and API requests.
+
+3. database :
+--> Stores and retrieves data for the application.
+--> Can be Relational (MySQL, PostgreSQL, SQL Server) or NoSQL (MongoDB, Firebase, Cassandra).
+
+
+
+
+
+
+ 

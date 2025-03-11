@@ -1,0 +1,99 @@
+Manual Testing
+Manual Testing
+What is testing?
+The process of identifying bugs or errors or defects.
+The process ofchecking whether the project or product is satisfying the requirement ofthe
+client or not.
+Main objective oftesting?
+Identify Defects or Bugs.
+Verify Requirements.
+Improve Quality.
+Verify Requirements.
+Ensure Performance and Reliability.
+Compliance and Security.
+User Experience (UX) Validation.
+Ensure Performance and Reliability.
+Why testing?
+To ensure the developed software or project or product functions correctly, meets
+requirements, and delivers a high-quality user experience.
+1. What is testing?
+ The process of identifying bugs or errors or defects.
+ The process of checking whether the project or product is satisfying the requirement of the
+client or not.
+2. Main objective of testing?
+ Identify Defects or Bugs.
+ Verify Requirements.
+ Improve Quality.
+ Verify Requirements.
+ Ensure Performance and Reliability.
+ Compliance and Security.
+ User Experience (UX) Validation.
+ Ensure Performance and Reliability.
+3. Why testing?
+ To ensure the developed software or project or product functions correctly, meets
+requirements, and delivers a high-quality user experience.
+What is software testing?
+Software testing is the testing of entire application. It means the process of checking if a
+software application meets requirements and works as expected. Its main goal is to find
+defects or bugs and ensure the software is reliable and performs well in different situations.
+4. What is software testing?
+ Software testing is the testing of entire application. It means the process of checking if a
+software application meets requirements and works as expected. Its main goal is to find
+defects or bugs and ensure the software is reliable and performs well in different situations.
+What is the software quality?
+5. What is the software quality?
+
+The quality is defined a justification for all the requirements of a customer in a product
+quality is not defined a product it will defined the customers mind.
+justification for all the requirements of
+The quality is defined
+customer in a product
+quality is not defined a product it will defined the customers mind.
+Ex: Bug free, delivered on-time, budget, and meet requirements as per expectations,
+maintainable.
+Ex: Bug free, delivered on-time, budget, and meet requirements as per expectations,
+maintainable.
+What is quality software?
+Bug free software.
+Satisfy the requirement of clients
+Delivering the project or product or software on time.
+To reduce maintenance cost.
+6. What is quality software?
+ Bug free software.
+ Satisfy the requirement of clients
+ Delivering the project or product or software on time.
+ To reduce maintenance cost.
+What is difference b/n product and project?
+PROJECT: A software application developed for a specific customer based on the requirements is called Project.
+PRODUCT: A software application developed for multiple customers based on the market requirements is called
+Product.
+7. What is difference b/n product and project?
+ PROJECT: A software application developed for a specific customer based on the requirements is called Project.
+ PRODUCT: A software application developed for multiple customers based on the market requirements is called
+Product.
+8. What is the error?
+What
+the error?
+
+'t ¢ nothing but incorrect human action. That produces a false action.
+It is nothing but incorrect human action. That produces a false action.
+
+9. What are the Bug or defect and failure?
+ BUG: Deviation from the behavior of the system.
+ FAILURE: It is defines as the complete deviation from the actual behavior of the system.
+10. Why software has bugs?
+ Miscommunication.
+ Software complexity
+ Programming errors ( compile errors)
+ Lack of skills (programming).
+ Changing requirements.
+11. What is the SDLC?
+ The Software Development Life Cycle (SDLC) is a structured process used to develop software applications.
+ The goal of SDLC is to ensure high-quality software that meets user requirements and is
+delivered on time and within budget.
+ It is fallow the below pattern.
+Requirements Analysis
+Design
+Development
+Testing
+Maintenance

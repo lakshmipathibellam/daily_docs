@@ -1,0 +1,162 @@
+1. cloud:processes the data & uses the application.
+---> install linux,windows,jenkins,mysql,git
+cloud computing:It is an ability (or) place where we can store our data.
+-->we can access/ process the data from anywhere in the world.
+-->we can access the data only when we have the interner connection.
+-->there are 2 different types of cloud computing:
+
+	1. service model-->saas,Paas,Iaas,Faas
+
+Iaas: Infrastructure as a service
+-->provides virtualized computing resources over the internet.
+-->no worries about handling the internal machines.
+Ex: whole infrastructure will be given to us, we will create our own applications and use it.
+
+-->Data---Application---Run-Time---Middleware---OS--->will be managed by ourselves(DevOps Engineer)
+--->Virtualization---Servers---Storage---Networking---> will be managed by our vendors(clients).
+
+Paas: Platform as a service
+--->only data & application will be maintained by ourselves.
+---> remaining all(Runtime--middleware--os--virtualization--servers--storage--networking) will be maintained by vendors.
+Ex: Google 
+----> we can create our own applications.
+
+Saas: software as a service
+
+--> only data will be maintained by ourselves.
+--> remaining all will be maintained by vendors).
+
+	2. deployment model-->1. private cloud
+			     2. public cloud
+			     3. hybrid cloud
+			     4. community cloud
+				eg: A(start up)---->IBM---->ABC(cloud)
+
+AWS:Amazon web service
+---> top/best most cloud provider.
+--->first cloud which is introduced in the market.
+--->Saas&Paas---->combination
+---> without any physical space this aws allows people to store the data.
+--->"pay as you go"
+--->18 geographical regions-aws is covering
+--->started 2005.
+Devops:
+DEv+Ops--->its an combination of developer team & operational team.
+-->it is the way of s/w developemnt.
+-->it is a methodolgy.
+-->it is a set of tools.
+-->it is the way to automate things.
+-----------------------------------------------------------------------
+Devops:
+devops is the "process of delivering the product/project by ensuring automation in place ,ensuring the quality with continous monitoring & continous testing".
+-------------------------------------------------------------------------
+why devops:
+1. to deliver the s/w (or) project(or) product on time.
+phonepe app----v1---->v2----10days(without devops)
+			----2days(with devops)
+----> devops uses CI/CD(continous integration/continous deployment).
+----------------------------------------------------
+SDLC:software development life cycle
+1.waterfall model:also called as "linear sequential development model"(non-iterative)
+		Requirement analysis---->System design--->Implementation---->Deployment---->Maintenance.
+
+----SRS-s/w requirement specification.
+-->it takes 6 months -12 months(1 year) to develop a s/w using this model.
+1. requirement analysis: SRC document
+2. system design:design-plannig-assigning works/tasks to the teams.
+			Low level & high level----(first phase)
+	coding will be done with implementation(second phase)
+3. Implementation:
+-->integrates all the coding done in the previous step.
+--> starts testing.
+4. Deployment:
+--> complete s/w will be moved/shifted to the global server from local server.
+5. Maintenance:
+-->Monitoring the s/w or application.
+
+
+2.agile model:
+--> s/w shopping amazon,flipkart,myntra,ajio social media fb,twitter,instagram,watsapp.
+-->agile- means "the ability to respond to the changes from requirements, technology & people".
+--> incremental & iterative to develope a s/w (or) application.		
+-->v1---->v2-----V3----release.
+-->we will deliver a piece of s/w with few functionality.
+
+3 Principles of Agile:
+1. customer no need to wait till the whole s/w is developed.
+2. delivering the piece of s/w which contains some functionalities which is already developed & tested.
+3.we can accomodate/accept the requirement changes from the customers continously.
+
+Advantages:
+1. requirement changes are allowed at any stage of development.
+2. releases will be too fast-->1 week
+3. customers no need of waiting for longer time.
+4.good communication will be there between all the teams.
+5. it is very easy to adopt.
+
+Disadvantage:
+1. less focus on design & documentation.
+
+Agile s/w developement process:
+
+Requirement analysis--->System design-->development-->testing--->deployment---->Review---->delivery--->feedback---->system design
+
+Agile process involves 3 segments:
+
+Agile scrum process:
+Scrum master(team lead) --> ensure that the team is working properly or not--> motivating.
+grooming calls ---> requirements of the applications will be diovided into epics(huge requirements).----->epics will divide equally to all the team members.
+Daily scrum---daily updates(reg any issues?/chanllenges?/any blocker?)
+
+1. sprint meeting:meeting regarding the process of agile & duration
+2. sprint review:review the planning to develop a s/w.
+3. sprint retrospective:calls-->Dev call---> QA call-->optional meeting.
+
+----------------------------------------------------------------------------------
+1.compiler
+2.Interpreter
+3.differences between compiler & interpreter.
+4.High level language with example.
+5.Low level language with example.
+--------------------------------------------------------------------------
+Topics for exam on friday(27/12/2024):
+1. Devops-Intoduction
+2. Maunal testing concepts
+3. SDLC: waterfall & Agile methodologies
+4. cloud, cloud computing
+
+----------------------------------------------------------------------------
+testing:manual testing-->3 types
+1. white box:
+--->developers will test each & every line of code.
+-->need programming skills to design test cases.
+-->developers fixes bugs & performs 1 round of WB testing--send it to the testing team.
+---> fixing bugs clearing the errors-->deleting the bugs.
+2. Black box testing:
+--> examine the functionality of the s/w.
+-------------------------------------------------------------------
+bugs:developer----operations team(testing--finds any error)
+error-mistakes in coding done by the developer.
+deffect:error accepted by the developer.
+failure: total wrong.
+----------------------------------------------------------------------
+V-model
+spiral model
+prototype
+incremental
+--------------------------------
+tools required:
+1. planning/coding/SCM:git,jira
+2. building code:Maven,gradle,apache ANT
+3. testing:selenium testing with python
+4. integration: Jenkins(CI/CD)
+5. deployment:Dockers,Kubernates
+6. operations:Ansible--(managing)
+7. monitoring:teraform
+-----------------------------------------
+
+2. black box--->2 types-->functional & non-functional; functional-->3 types-->unit ,integration & system
+3. grey box
+-----------------------------------------
+
+

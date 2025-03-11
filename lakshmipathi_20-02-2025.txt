@@ -1,0 +1,115 @@
+DEVOPS:
+It is culture which varies from org to org.
+               (or)
+it is the process of delivery by ensuring by the automation(CI/CD) in place, ensuring the quality by continuous monitoring & testing.
+
+why we do need devops?
+1.to deliver the s/w or project or product on time.
+2.to deliver the product with high quality(accurately).
+3.to deliver by automation -CI/CD tools.
+4.to deliver by continuous monitoring & testing.
+5. in order to upgrade its version.
+
+DevOps:
+--> uses ci/cd (continuous integration and continue deployment).
+1. system admin: maintains the server.
+2. build & relies team : to deployed the applications on to the server.
+3.server admin : check whether it needs to select the web application/data application.
+4.database: web server......run web applications
+            database server....to store the data of application.
+DevOps: Developer team + operation team
+Developer team : simple planning--->code--->build--->test(internally)
+
+operation team: deployment--->monitor--->automation
+
+---------------------------------------------------------------------------
+1. planning/code : VCS - Version control system -- GIT,JIRA.
+2. build tool : pom.xml---Apache maven, Apache ANT gridle.
+3. testing : automation testing using python.
+4. integration : Jenkins (CI/CD)
+5. deployment : Apache tomcat (web server).
+6. operational tool: ansible,  docker, Kubernetes, terraform.
+-----------------------------------------------------------------------------
+
+
+2. continuous integration : Jenkins
+3. continuous testing : automation using python.
+4. continuous management & deployment : ansible, puppet & chef.
+5.continous monitoring : Nagios
+6. containerization : Docker, Kubernetes.
+--------------------------------------------------------------------------------
+
+topics gng to cover.
+1. testing : manual & automation
+2. cloud and cloud computing and types
+3. devops introduction
+4. python
+5. MySQL
+6. git
+7. Linux
+8. Jenkins
+9. dockers - containers
+10. maven
+11. tomcat
+12. Kubernetes
+14. sonarcubes/ansible
+12. sample automation project.
+----------------------------------------------------------------------
+
+1. Python
+High-level, interpreted programming language used for scripting, automation, web development, and data science.
+Supports Object-Oriented Programming (OOP) and Procedural Programming.
+Popular frameworks: Django, Flask (for web development).
+Used in DevOps for scripting automation, configuration management, and CI/CD pipelines.
+2. MySQL
+Open-source relational database management system (RDBMS).
+Uses SQL (Structured Query Language) for data manipulation.
+Supports ACID properties ensuring data integrity.
+Commonly used in web applications for storing structured data.
+3. Git
+Distributed version control system used for tracking code changes.
+Key commands: git init, git clone, git commit, git push, git pull, git merge.
+Hosted on platforms like GitHub, GitLab, and Bitbucket for collaboration.
+4. Linux
+Open-source operating system widely used in server environments.
+Common distributions: Ubuntu, CentOS, Red Hat, Debian.
+Key commands: ls, cd, pwd, chmod, sudo, grep, awk, sed.
+Used in DevOps for server management and automation.
+5. Jenkins
+Open-source automation server for CI/CD.
+Allows integration with Git, Docker, Kubernetes, Maven, and more.
+Automates building, testing, and deploying applications.
+Uses Pipelines (Jenkins file) to define CI/CD workflows.
+6. Docker (Containers)
+Platform for containerization, enabling lightweight, portable, and scalable applications.
+Eliminates dependency issues by packaging applications with all necessary libraries.
+Key commands: docker build, docker run, docker ps, docker images, docker-compose.
+Works with Kubernetes for container orchestration.
+7. Maven
+Build automation tool for Java-based projects.
+Manages project dependencies using pom.xml.
+Integrates with Jenkins for CI/CD pipelines.
+Commands: mvn clean install, mvn package, mvn test.
+8. Tomcat
+Open-source web server and servlet container for deploying Java applications.
+Supports Java Servlet, JSP, and WebSocket technologies.
+Used for hosting web applications in production environments.
+9. Kubernetes
+Container orchestration platform for automating deployment, scaling, and management of containerized applications.
+Manages multiple containers across different nodes.
+Key components: Pods, Nodes, Deployments, Services, ConfigMaps.
+Works with Docker and CI/CD tools for scalability.
+10. SonarQube
+Continuous code quality and security analysis tool.
+Detects bugs, vulnerabilities, and code smells in multiple programming languages.
+Integrated into CI/CD pipelines to enforce code quality standards.
+11. Ansible
+Open-source automation tool for configuration management and application deployment.
+Uses YAML-based playbooks to define automation tasks.
+Agentless, meaning it does not require any software installed on managed nodes.
+Commonly used for provisioning infrastructure and application deployment.
+
+
+
+
+               

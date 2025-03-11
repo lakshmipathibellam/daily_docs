@@ -1,0 +1,39 @@
+Constraints : constraints are used to validate the data before you are inserting into the table.
+
+1.Primary key
+2.unique key
+3.foreign key
+4.check
+5.not null 
+6.defualt
+
+Primary key : A combination of NOT NULL and unique. it will not allow duplicate values and not allow null values. only one primary key on every table. but we can add multiple composite primary keys on multiple columns.
+
+Add primary key : ALTER TABLE table_name ADD PRIMARY KEY (column_name);
+
+Drop primary key : ALTER TABLE table_name DROP PRIMARY KEY;
+-----------------------------------------------------------------------------------------------------------------------------
+Unique key : it will not allow duplicate values.it will allow null values. we can have multiple unique keys on the tables.
+
+Add unique key : ALTER TABLE table_name ADD UNIQUE (column_name);
+
+Drop unique key : ALTER TABLE table_name DROP INDEX column_name;
+------------------------------------------------------------------------------------------------------------------------------
+Foreign key : it is establishing parent and child relation b/n two tables.
+
+Add foreign key : ALTER TABLE child_table ADD CONSTRAINT fk_name FOREIGN KEY (child_column) REFERENCES parent_table(parent_column);
+
+Drop foreign key : ALTER TABLE child_table DROP FOREIGN KEY fk_name;
+---------------------------------------------------------------------------------------------------------------------------------
+Default : when we dont insert some value into the column then automatically it will take default value we will use default constraint.
+
+Add default : ALTER TABLE table_name ALTER COLUMN column_name SET DEFAULT 'default_value';
+
+Drop default : ALTER TABLE table_name ALTER COLUMN column_name DROP DEFAULT;
+
+ 
+
+
+
+
+

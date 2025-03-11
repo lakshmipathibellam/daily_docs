@@ -1,0 +1,87 @@
+HOW TO GENERATE SSH KEY :
+
+--> Open Git Bash
+
+--> Run this command : ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+--> Press enter 
+
+--> Press enter
+
+--> The ssh key will be generated
+
+--> Copy the public key and paste it
+
+--> now open the GitHub account go to settings and open ssh key 
+
+--> Right side showing new ssh key click on it it will ask enter the title. give the title name and come down
+
+--> In the key box, paste the copied ssh key.
+
+--> click on add ssh key. 
+
+--> This is the process of to generate ssh key.
+
+HOW TO CREAETE REPOSITORY :
+
+--> Go to GitHub 
+
+--> click on it new. it is sowing on left side
+
+--> Then enter the repository name
+
+--> choose the repository either  public or private
+
+--> click create repository 
+
+--> it will be created
+
+HOW TO INITIALIZE GIT AND PUSH CODE IN VSCODE :
+
+--> Open vscode and open the folder
+
+--> Take on new file and write some code
+
+--> Then go to terminal open new terminal 
+
+--> Enter the commands :
+
+--> git init
+
+--> git add file name 
+
+--> git commit -m "first commit"
+
+--> git branch -M main
+
+--> git remote add origin git@github.com:lakshmipathibellam/sample.git
+
+--> git push -u origin main
+
+HOW CREATE BRANCH AND SWITCH TO ONE BRANCH TO ANOTHER BRANCH :
+
+--> Create branch : git switch -c branch name (or) git checkout -b branch name
+
+--> Switch Back to the Main Branch : git switch main (or) git checkout main 
+
+--> If you want to see branch : git branch 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

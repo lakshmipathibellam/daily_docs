@@ -1,0 +1,135 @@
+Python Operators :
+--> operator is a special symbol. which is use to evaluating expression. there are 7 operators in python.
+
+1. Arithmetic Operators (For Mathematical Operations) :
+--> which are use to make mathematical calculations.(+,-,*,**,/,//,%) 
+
++ - (addition of two numbers) 
+a=1,b=2 - sum = a+b 
+print("sum of two number is:", sum) - 3
+
+- (difference of two numbers)
+a=2,b=1 - diff = a-b
+print("diff of two number is:", diff) - 1
+
+* (multiplication)
+a=2,b=3 - mult =a*b
+print("product of two number is:", product) - 6
+
+/ (Division)
+a=100,b=20 - division= a/b
+print("division of two number is:", div) - 5.0
+
+// Floor Division
+a=100,b=20 - Floor Division = a//b
+print("Floor Division of two number is:", flor) - 5
+
+% (Modulus (Remainder))
+a=10 ,b=3 - Modulus = a%b
+print("modulus of two number is:", mod) - 1
+
+** Exponentiation (Power)
+a=2,b=3 power=a**b
+print("power of two number is:", pow) - 8
+
+-----------------------------------------------------------------------------------
+2. Comparison (Relational) Operators :
+--> which are use to compare to the values.
+Equal to : ==
+Not equal to :!=
+Greater than : >
+Less than : <
+Greater than or equal to : >=
+Less than or equal to : <=
+-----------------------------------------------------------------------------------
+3.Logical operators:
+
+--> logical operators are used to combined multiple conditions. some times you might need to take the decision based on multiple conditions output. At that time we use logical operators. their are 3 types of logical operators.
+1. AND ,2. OR ,3. NOT
+
+AND : if all the conditions are true. the output is true
+x = 2,y =4
+print((x > 5 and y < 15)) - false
+ 
+OR : if all the conditions are false. the output is false otherwise true .
+x = 2,y =4
+print((x > 5 or y < 15)) - true
+ 
+NOT : if input is true the output is false. the input is false the output is true.
+x=2
+print(not x>5) - true
+--------------------------------------------------------------------------------------
+4. Membership operators :
+
+--> Membership operators are IN, NOT IN. there are use to check for a value among the multiple values.
+
+1. IN : if you want a check a value is their in the group of values or not. we use IN operator. if the value in the group the output will give you true. Otherwise false.
+
+EX : x=[1,2,3,4,5]
+     res= 2 in x 
+     print(res) - true
+2. NOT IN : NOT IN is opposite to IN.
+EX : x=[1,2,3,4,5]
+     res= 2 not in x 
+     print(res) - false
+----------------------------------------------------------------------------------------
+5.Identity operators :
+
+-->Identity operators are IS NOT IS.their are used to compare the memory locations of two objects. They check whether two variables reference the same object in memory.
+1.IS : it will give  True if both variables refer to the same object (same memory location).
+
+EX : a = [1, 2, 3]
+     b = a  
+     print(a is b) - true.
+    
+2. NOT IS : it will give True if two variables refer to different objects in memory.
+
+EX : a = [1, 2, 3]
+     b = [1, 2, 3]  
+     print(a is not b) - true
+------------------------------------------------------------------------------------------
+6.Bitwise operators :
+
+--> Bitwise operators perform operations on binary representations of numbers at the bit level. They work with integers by converting them into binary format (0s and 1s) and then applying logical operations.
+AND (&), OR (\|), XOR (^), NOT (~), Left Shift (<<) , Right Shift (>>) 
+
+-------------------------------------------------------------------------------------------
+7. Assignment operator :
+
+--> Assignment operators are used to assign values to variables.(+=,-=,*=,/=,//=,%=,**=).
+
+EX :1. a = 10
+       a += 5  
+       print(a) - 15
+
+    2. a = 10
+       a -= 3  
+       print(a) - 7
+
+    3. a = 5
+       a *= 3 
+       print(a) - 15
+
+    4. a = 10
+       a /= 3
+       print(a) - 3.33
+
+    5. a = 10
+       a //= 3 
+       print(a)  - 3
+
+    6. a = 10
+       a %= 3  
+       print(a) - 1
+
+    7. a = 2
+       a **= 3 
+       print(a) - 8
+
+
+
+
+
+
+
+

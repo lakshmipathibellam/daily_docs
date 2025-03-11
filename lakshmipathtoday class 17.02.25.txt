@@ -1,0 +1,132 @@
+SEQUIENTIAL  DATA STRUCTURES :
+1.list 2.tuple 3.set 4.dictioneries
+--------------------------------------------------------------------------------------------
+List :
+--> it is the  data structure. which allows duplicate values. it fallows the order. it is mutable. mutable means it can be add new elements. also it can be modify existing elements.it supports homogenous values and heterogeneous values.it is indicates to square brackets []. 
+
+EX : list = [1,2,3,'ramu','luckky',1.3,'true']
+
+Tuple :
+--> tuple is also one of the data structure.it supports homogenous values and heterogeneous values. it allows duplicate values. it fallows the order. it is immutable. it is indicates to parentheses ().
+
+EX : tuple = ('Dhoni', 'Virat' , 'Raina', 6,3,8)
+
+Set : 
+--> set is also one of the data structure. which does not fallows the order. it does not support duplicate values. it is mutable. adding new elements and removing existing elements but it is cannot be modify existing elements. set is indicates curly brackets {}.
+
+EX : set = {'apple', 'orange', 'banana' , 'Pavan' , 'Nani'}
+
+DICTIONRY :
+--> dictionary is data structure. which is storing the data in the form of key value pairs.it is should not support duplicate keys. keys should be unique and values should be duplicate. here keys works like a index. it is order mutable data structure.it is indicates '{}'
+
+EX : dict = {'name' : 'lucky', 'age':26, 'fruit' : 'apple', 'gender' : 'male'}
+
+--------------------------------------------------------------------------------------------------------------
+Creating list:
+list1 = [1,2,3,4,5,4,2,1]
+list2 = [1,2,3,'ramu','luckky',1.3,'true']
+print(list1) - [1, 2, 3, 4, 5, 4, 2, 1]
+print(len(list1)) - 8
+print(list2) - [1, 2, 3, 'ramu', 'luckky', 1.3, 'true']
+print(len(list2)) - 7
+list.append('sachin') - [1, 2, 3, 4, 5, 4, 2, 1, 'sachin']
+----------------------------------------------------------------------------------------------------------------
+Creating tuple:
+tuple1 = (1,2,'rama','sita','venky')
+tuple2 = ('bat', 'ball' ,'pads', 'stumps')
+print(tuple1) - (1, 2, 'rama', 'sita', 'venky')
+print(tuple2) - ('bat', 'ball', 'pads', 'stumps')
+
+CONVERTE TO TUPLR TO LIST :
+tuple1 = (1,2,'rama','sita','venky')
+print([tuple1]) - [(1, 2, 'rama', 'sita', 'venky')]
+----------------------------------------------------------------------------------------------------------------
+creating set :
+set1= {1,2,'ap','up','hp','jk'}
+set2= {'telugu','english','hindi','tamil','telugu','english'}
+print(set1) - {1, 2, 'hp', 'up', 'jk', 'ap'}
+print(set2) - {'hindi', 'english', 'telugu', 'tamil'}
+print(len(set1)) - 6
+print(len(set2)) - 4
+------------------------------------------------------------------------------------------------------------------
+creating dictionary :
+dict1 = {'name' : 'lucky', 'age':26, 'fruit' : 'apple', 'gender' : 'male'}
+dict2 = {'sub' : 'english' , 'sub' : 'maths' , 'marks' :70 , 'marks' : 80}
+dict2 = {'sub' : 'english' , 'sub2' : 'maths' , 'eng marks' :70 , 'mat marks' : 80}
+
+print(dict1) - {'name': 'lucky', 'age': 26, 'fruit': 'apple', 'gender': 'male'}
+print(dict2) - {'sub': 'maths', 'marks': 80}
+print(dict3) - {'sub': 'english', 'sub2': 'maths', 'eng marks': 70, 'mat marks': 80}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

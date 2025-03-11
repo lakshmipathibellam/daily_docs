@@ -1,0 +1,84 @@
+--> DevOps.
+It is culture which varies from organization to organization (or) it is the process of delivery by ensuring by the automation(CI/CD) in place, ensuring the quality by continuous monitoring & testing.
+
+--> Why Do We Need DevOps.
+
+1. To deliver the s/w or project or product on time.
+2. To deliver the product with high quality(accurately).
+3. To deliver by automation -CI/CD tools.
+4. To deliver by continuous monitoring & testing.
+5. In order to upgrade its version.
+6. Enhances communication between development and operations teams.
+
+--> Key Components of DevOps.
+
+1. CI/CD (Continuous Integration & Continuous Deployment)
+Continuous Integration (CI): Developers frequently merge code into a shared repository, where automated builds and tests are run.
+Continuous Deployment (CD): Code changes pass through automated tests and are deployed to production environments without manual intervention.
+
+2. DevOps Teams and Responsibilities
+
+ Development Team (Dev)
+ Planning – Understanding business requirements.
+ Coding – Writing and developing software.
+ Building – Compiling and packaging code.
+ Testing (Internal) – Performing unit and integration tests.
+
+ Operations Team (Ops)
+ Deployment – Releasing software to production.
+ Monitoring – Tracking system health and performance.
+ Automation – Reducing manual efforts through tools like Ansible, Terraform, etc.
+
+ -->which  topics going to cover.
+1. testing : manual & automation
+2. cloud and cloud computing and types
+3. devops introduction
+4. python
+5. MySQL
+6. git
+7. Linux
+8. Jenkins
+9. dockers - containers
+10. maven
+11. tomcat
+12. Kubernetes
+14. sonar cubes/ansible
+12. sample automation project.
+
+--> Python:
+A high-level, versatile programming language used for automation, scripting, web development, and data science. It supports both procedural and 
+object-oriented programming.
+
+--> MySQL
+An open-source relational database management system (RDBMS) used to store and manage structured data efficiently, widely used in web applications.
+
+--> Git
+A version control system (VCS) that tracks code changes, allowing multiple developers to collaborate efficiently using repositories like GitHub and GitLab.
+
+--> Linux
+An open-source operating system widely used in servers, cloud environments, and DevOps for its stability, security, and command-line utilities.
+
+-->Jenkins
+A widely used CI/CD automation tool that enables developers to build, test, and deploy applications automatically.
+
+-->Docker
+A containerization tool that packages applications with dependencies into lightweight, portable containers for efficient deployment.
+
+--> Maven
+A build automation tool for Java projects that manages dependencies and builds project artifacts using XML-based configuration files (POM.xml).
+
+--> Tomcat
+An open-source web server and servlet container that runs Java applications and supports Java Server Pages (JSP) and Servlets.
+
+--> Kubernetes
+A container orchestration platform that automates the deployment, scaling, and management of containerized applications.
+
+--> SonarQube
+It is a Continuous code quality and security analysis tool.
+
+--> Ansible
+It is a Open-source automation tool for configuration management and application deployment.
+
+
+
+
