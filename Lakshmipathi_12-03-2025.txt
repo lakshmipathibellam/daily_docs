@@ -1,0 +1,60 @@
+---> Today i collected near 50 git commands and practiced few commands 
+---> created few repositories and executed one by one
+
+GIT COMMANDS :
+
+---> Git Configuration commands :
+git config --global user.name "Your Name"
+git config --global user. email "your-email@example.com"
+git config --global --list    # View global configurations
+
+---> Initialize a Repository :
+git init -->Initialize a new Git repository
+git clone <repo_url> -->Clone an existing repository
+
+
+---> Staging and Committing :
+git status                --> To Check the status of files
+git add <file>            --> Stage a specific file
+git add .                 --> Stage all files
+git commit -m "Message"   --> Commit changes with a message
+git commit -am "Message"  --> Add & commit tracked files in one step
+git diff                  --> Show differences between working directory and staging area
+git reset                 --> Resets the staging area or commit history.
+git revert                --> Creates a new commit that undoes the changes made in a previous commit.
+
+
+---> Branching and Merging :
+
+git branch --> List branches
+git branch <branch_name>         --> Create a new branch
+git checkout <branch>            --> Switch to a branch
+git checkout -b <branch>         --> Create and switch to a new branch
+git merge <branch>               --> Merge a branch into the current branch
+git branch -d <branch>           --> Delete a branch
+git branch -a                    --> List all branches, including remote
+git branch -m old_name new_name  --> Rename a branch
+git checkout HEAD^               --> Move to the previous commit
+git checkout HEAD~2              --> Move two commits back
+git tag v1.0                     --> Create a new tag
+git tag -a v1.1 -m "Version 1.1" --> Create an annotated tag
+git tag -d v1.0                  --> Delete a tag
+git push origin --tags           --> Push tags to remote
+
+---> Push and Pull from Remote :
+
+git remote -v --> View remote repositories
+git remote add origin <URL> --> Add a remote repository
+git push -u origin <branch> --> Push code local repo to remote
+git pull origin <branch>    --> Pull latest changes from remote and Downloads changes from a remote repository and merges them into the current branch.
+git fetch                   --> Fetch changes without merging
+
+---> Stashing
+
+git stash              --> Temporarily saves changes that you don't want to commit immediately.
+git stash pop          --> Restore stashed changes and remove from stash
+git stash apply        --> Apply stash without removing it
+git stash list         --> View stashed changes
+git stash drop         --> Delete a stash
+git stash clear        --> Remove all stashes
+git rebase <branch>    --> This moves your current branch’s commits on top of the specified branch.
